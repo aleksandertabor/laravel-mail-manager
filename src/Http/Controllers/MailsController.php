@@ -1,6 +1,6 @@
 <?php
 
-namespace AleksanderTabor\MailManager;
+namespace AleksanderTabor\MailManager\Http\Controllers;
 
 class MailsController
 {

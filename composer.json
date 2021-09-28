@@ -32,7 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "AleksanderTabor\\MailManager\\": "tests"
+            "AleksanderTabor\\MailManager\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -43,9 +43,12 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
