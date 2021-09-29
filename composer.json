@@ -16,13 +16,18 @@
     "authors": [
         {
             "name": "Aleksander Tabor",
-            "email": "alekx.tabor@gmail.com"
+            "email": "alekx.tabor@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "illuminate/contracts": "^8.62",
+        "illuminate/support": "^8.0",
+        "illuminate/console": "^8.0"
     },
     "require-dev": {
+        "orchestra/testbench": "^6.21",
         "phpunit/phpunit": "^9.5"
     },
     "autoload": {
@@ -39,7 +44,10 @@
         "laravel": {
             "providers": [
                 "AleksanderTabor\\MailManager\\MailManagerServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "MailManager": "AleksanderTabor\\MailManager\\MailManagerFacade"
+            }
         }
     },
     "scripts": {

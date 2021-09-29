@@ -2,13 +2,15 @@
 
 namespace AleksanderTabor\MailManager\Tests;
 
-use PHPUnit\Framework\TestCase;
-
 class BasicTest extends TestCase
 {
     /** @test */
     public function it_works()
     {
+        dd(collect(['a', 'b']));
+
+        dd(config('database'));
+
         $this->assertTrue(true);
     }
 }
